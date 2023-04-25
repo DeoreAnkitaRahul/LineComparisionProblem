@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LineComparisionProblem
 {
-   public class CalculateLength
-   {
+    public class CalculateLength
+    {
         int x_One, x_Two, y_One, y_Two;
         public CalculateLength(int x_One, int x_Two, int y_One, int y_Two)
         {
@@ -16,10 +16,11 @@ namespace LineComparisionProblem
             this.y_One = y_One;
             this.y_Two = y_Two;
         }
-        public void Calculate()
+        public double Calculate()
         {
             double length = Math.Sqrt(Math.Pow(x_Two - x_One, 2) + Math.Pow(y_Two - y_One, 2));
             Console.WriteLine($"Length of the line is: {length}");
+            return length;
         }
     }
 }
